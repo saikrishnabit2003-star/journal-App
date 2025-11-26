@@ -117,7 +117,7 @@ export default function AvailableJournal() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ userInput: search }),
+      body: JSON.stringify({ title: search }),
     })
       .then((res) => res.json())
       .then((data) => {
