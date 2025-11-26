@@ -13,6 +13,14 @@
     padding: 10px;
     text-align: center;
 }
+.title marquee {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+}
+
+
 .maincontainer{
     display: flex;
     flex-direction: column;
@@ -32,6 +40,7 @@
 }
 .container div{
     background-color: white;
+    color: rgb(28, 181, 195);
     border-radius: 20px;
     height: 100px;
     width: 250px;

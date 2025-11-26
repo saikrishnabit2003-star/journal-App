@@ -22,7 +22,7 @@
 .searchContainer form input{
     border: 1px solid #373B86;
     border-radius: 15px;
-    width: 90vw;
+    width: 98vw;
     height: 80px;
     justify-content: center;
     align-items:center ; 
@@ -139,7 +139,7 @@
 
 .actualTable{
     margin-top: 20px;
-    
+    width: 98vw;
    
 }
 .actualTable div{
@@ -148,7 +148,7 @@
 }
 .actualTableTag{
     width: 98vw;
-    overflow-wrap: normal;
+    overflow-wrap:anywhere;
 }
 .actualTableTag tr th{
     

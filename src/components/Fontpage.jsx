@@ -7,7 +7,7 @@ export default function Fontpage(){
     return(
         <div className={style.Fontpage}>
         <div>
-            <h1 className={style.title}>JOURNAL SUGGESTION APP</h1>
+            <h1 className={style.title}><marquee behavior="" direction="" >JOURNAL SUGGESTION APP</marquee></h1>
         </div>
        <div className={style.maincontainer}>
          <div className={style.container}>

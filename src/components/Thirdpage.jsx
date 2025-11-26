@@ -6,16 +6,21 @@ export default function Thirdpage(){
     return (
         <div className={style.container}>
         <button onClick={()=>nav("/")} className={style.backButton}><img src={backButton}alt="Back" /></button>
-        {/* <div className={style.title}>
-            <h1>Suggest Journal</h1>
-        </div> */}
         <div className={style.main_cointainer}>
-           {/* <h2>Tittle</h2> */}
-           {/* <input type="text" placeholder="Enter Value....." /> */}
-            <button onClick={()=>nav("/AvailableJournal")}>Available journals</button>
-            <button onClick={()=>nav("/AssociateEditor")}>Associate editor</button>
+            <div className={style.containers}>
+                        <div>
+                            <h1>OPTION 1</h1>
+                        </div>
+                        <button onClick={()=>nav("/AvailableJournal")}>Available journals</button>
+                    </div>
+            <div className={style.containers}>
+                         <div>
+                            <h1>OPTION 2</h1>
+                        </div>
+                         <button onClick={()=>nav("/AssociateEditor")}>Associate editor</button>
+                    </div>
         </div>
-        
+        <div className={style.bottom}></div>
     </div>
     )
 }

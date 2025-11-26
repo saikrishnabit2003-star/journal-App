@@ -65,6 +65,7 @@ export default function Uploadpage() {
                         </div>
                     
         </div>
+        <div className={style.bottom}></div>
         </div>
     )
 }

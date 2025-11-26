@@ -112,7 +112,7 @@ export default function AvailableJournal() {
   const handleFetch = (e) => {
     e.preventDefault();
 
-    fetch("https://jsonplaceholder.typicode.com/users", {
+    fetch("http://13.219.182.76:8000/forward-topic/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -227,6 +227,7 @@ export default function AvailableJournal() {
               <tr>
                 <th>Journal_Name</th>
                 <th>Special_Issue_Name</th>
+                <th>Similarity_Score</th>
                 <th>Journal_Website</th>
                 <th>Journal_Login_Status</th>
                 <th>SI_Open</th>
@@ -244,6 +245,7 @@ export default function AvailableJournal() {
                   <tr key={index}>
                     <td>{item.Journal_Name}</td>
                     <td>{item.Special_Issue_Name}</td>
+                    <td>{item.Similarity_Score}</td>
                     <td>
                       <a href={item.Journal_Website}>{item.Journal_Website}</a>
                     </td>
@@ -258,7 +260,7 @@ export default function AvailableJournal() {
                 ))
               ) : (
                 <tr>
-                  <td colSpan="10" style={{ textAlign: "center" }}>
+                  <td colSpan="11" style={{ textAlign: "center" }}>
                     No matching data
                   </td>
                 </tr>

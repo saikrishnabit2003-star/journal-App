@@ -61,7 +61,61 @@
     border-radius: 20px;
 }
 
-.main_cointainer button:hover{
-    background-color:#378658;
-    color: #fff;
+.main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.containers{
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: #378658;
+    height: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.containers div{
+    background-color: white;
+    color: rgb(28, 181, 195);
+    border-radius: 20px;
+    height: 100px;
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 10px;
+    align-content: center;
+    
+}
+.containers div h1{
+    margin-left: 50px;
+}
+.containers button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top:5px ;
+    padding-bottom: 5px;
+    width: 250px;
+    font-size: large;
+    margin-left: 25px;
+    background-color: #373B86;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.containers button:hover{
+    background-color:white;
+    color: #378658;
+}
+
+
+.bottom{
+    margin-top: 40px;
+    height: 50px;
+    width: 100vw;
+    background-color: #378658;
+    position: fixed;
+    bottom: 0%;
+    border-radius: 5px;
 }

@@ -6,12 +6,24 @@ import Thirdpage from './components/Thirdpage'
 import AvailableJournal from './components/AvailableJournal'
 import AssociateEditor from './components/AssociateEditor'
 import "./App.css"
+import Logo from "../src/assets/logo.png"
 function App() {
+  const theme = () => {
+    document.body.classList.toggle('dark-mode');
+  }
+
 
 
   return (
     <>
-    <div className='top'></div>
+    <div className='top'>
+      
+      <div className='container'>
+        <img src={Logo} alt="Logo" />
+        <h1>Journal Suggestion Application</h1>
+        <button id='DarkTheme' onClick={theme}>Dark mode</button>
+      </div>
+    </div>
      <BrowserRouter>
      <Routes>
       <Route path='/' element={<Fontpage/>}/>
@@ -21,7 +33,6 @@ function App() {
       <Route path='/AssociateEditor' element={<AssociateEditor/>}/>
      </Routes>
      </BrowserRouter>
-     <div className='bottom'></div>
     </>
   )
 }
