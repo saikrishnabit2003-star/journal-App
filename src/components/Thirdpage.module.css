@@ -1,6 +1,6 @@
 /* Main Page Container */
 .page {
-  height: 85vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   position: relative;
