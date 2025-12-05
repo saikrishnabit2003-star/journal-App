@@ -186,11 +186,9 @@ export default function AvailableJournal() {
 
   const activeFilters = getActiveFilters();
 
-  console.log(rowsLimit);
 
   // Filtered data
   const filteredData = TableData.filter((item) => {
-    console.log(item);
     return Object.keys(filters).every((key) => {
       if (filters[key].length === 0) return true;
       return filters[key].includes(item[key]);

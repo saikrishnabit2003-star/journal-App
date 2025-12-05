@@ -15,9 +15,9 @@ function Loginpage({ setIsLoggedIn }) {   // ⭐ Receive prop
     e.preventDefault();
 
     if (name === username && password === pass) {
-      localStorage.setItem("authToken", "my-fixed-token-12345");  // ⭐ Save token
-      setIsLoggedIn(true);                                        // ⭐ Update app state
-      nav("/Homepage");                                           // ⭐ Navigate
+      localStorage.setItem("authToken", "my-fixed-token-12345");  //  Save token
+      setIsLoggedIn(true);                                        //  Update app state
+      nav("/Homepage");                                       
     } else {
       alert("username and password incorrect");
       setname("");

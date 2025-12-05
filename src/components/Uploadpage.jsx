@@ -42,7 +42,6 @@ export default function Uploadpage() {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Journal Upload Success:", data);
       setMsg(data.message);
       setstatus(data.status);
     })
@@ -53,7 +52,7 @@ export default function Uploadpage() {
     .finally(() => setLoading(false));
 };
 
-console.log(loading,msg)
+
   // Associate Editor
   const [assfile, asssetFile] = useState(null);
   const asshandleFileChange = (e) => {
@@ -79,8 +78,6 @@ console.log(loading,msg)
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Associate Upload Success:", data);
-      console.log(typeof(data.status));
       setMsg(data.message);
       setstatus(data.status);
     })

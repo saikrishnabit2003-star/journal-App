@@ -1,9 +1,11 @@
 /* Page Layout */
 .page {
-  height: 85vh;
+   height: 88vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 }
 
 .body {
@@ -554,7 +556,7 @@
   text-align: start;
 }
 .scrollCell {
-  max-height: 150px;       /* Visible height limit */
+  max-height: 100px;       /* Visible height limit */
   width: 500px;
   overflow-y: auto;       /* Vertical scroll */
   white-space: normal;    /* Text wrap */
@@ -613,12 +615,12 @@
 }
 
 .actualTableTag thead th:nth-child(11) {
-  width: 250px;
+  width: 450px;
   overflow-wrap: anywhere;
   text-align: center;
 }
 .actualTableTag tbody td:nth-child(11) {
-  width: 250px;
+  width: 450px;
   overflow-wrap: anywhere;
   text-align: left;
 }
