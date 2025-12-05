@@ -22,7 +22,7 @@
 
 /* Back Button */
 .backButton {
-  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  background: transparent;           
   border: none;
   border-radius: 0.75rem;
   margin-left: 20px;
@@ -31,17 +31,21 @@
   box-shadow: 0 4px 16px rgba(14, 165, 233, 0.1);
   display: inline-flex;
   align-items: center;
-
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 1%;
+  top: 7%;
 }
 
 .backButton img {
   height: 50px;
-  width: 100px;
+  width: auto;
   /* filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(170deg) brightness(95%) contrast(101%); */
 }
 
 .backButton:hover {
-  background: linear-gradient(135deg, #f8fafc, #e0f2fe);
+
   transform: translateX(-5px);
   box-shadow: 0 6px 20px rgba(14, 165, 233, 0.2);
   border-color: rgba(56, 189, 248, 0.5);
@@ -52,19 +56,30 @@
 }
 
 /* Search Container - Centered */
+.mainsearch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius:20px;
+    background-color:rgba(2, 132, 199,0.1); ;
+}
+
 .searchContainer {
-  position: relative;
+  width: 100%;
+  position: static;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
+  /* margin-top: 50px; */
+  background-color: transparent;
+  /* border-radius: 8px; */
   margin-bottom: 1rem;
   /* margin-top: 1rem; */
-  border-radius:20px ;
-  background-color: rgba(2, 132, 199,0.1);
+  /* background-color: rgba(2, 132, 199,0.1); */
 }
 
 .searchContainer > div:first-child {
@@ -142,6 +157,7 @@
 }
 
 .buttonContainer button {
+  font-size: 1rem;
   padding: 0.6rem 1.2rem;
   background-color: #28a745;
   color: white;
@@ -157,6 +173,7 @@
 
 .clearBtn {
   background-color: #dc3545 !important;
+  font-size: 1rem;
 }
 
 .clearBtn:hover {
@@ -300,7 +317,7 @@
   white-space: nowrap;
   margin-bottom: 0;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #dee2e6;
+  /* border-bottom: 2px solid #dee2e6; */
 }
 
 .mainitem input[type="radio"] {
@@ -429,7 +446,10 @@
   max-height: 600px;
   overflow-y: scroll;
 }
-
+.actualTable h2{
+  color: #218838;
+  padding: 10px 1.5rem 10px 1.5rem;
+}
 .tableHeader {
   padding: 1rem 1.5rem;
   background-color: #007bff;
@@ -678,7 +698,10 @@
 /* Remove the ::before pseudo-element since we now have a separate overlay */
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .searchContainer{
+    margin-top: 50px;
+  }
   .menuContainer {
     width: 100%;
     max-width: 350px;

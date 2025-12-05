@@ -198,12 +198,13 @@ export default function AvailableJournal() {
   return (
     <div className={style.page}>
       <div className={style.body}>
-        <button onClick={() => nav("/Thirdpage")} className={style.backButton}>
-          <img src={backButton} alt="Back" />
-        </button>
+       
 
         {/* search area */}
-        <div>
+        <div className={style.mainsearch}>
+           <button onClick={() => nav("/Thirdpage")} className={style.backButton}>
+          <img src={backButton} alt="Back" />
+        </button>
           <div className={style.searchContainer}>
             <div>
               <div>
@@ -254,26 +255,7 @@ export default function AvailableJournal() {
 
             
 
-          {/* Active Filters Display */}
-          {activeFilters.length > 0 && (
-            <div className={style.activeFiltersContainer}>
-              <h3>Active Filters:</h3>
-              <div className={style.filterTags}>
-                {activeFilters.map(({ category, filter }, index) => (
-                  <div key={index} className={style.filterTag}>
-                    <span className={style.filterCategory}>{category}:</span>
-                    <span className={style.filterValue}>{filter}</span>
-                    <button
-                      onClick={() => removeFilter(category, filter)}
-                      className={style.removeFilterBtn}
-                    >
-                      ×
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+         
 
           {/* Filter Menu with Overlay */}
           {showMenu && (
@@ -325,6 +307,26 @@ export default function AvailableJournal() {
             </>
           )}
         </div>
+         {/* Active Filters Display */}
+          {activeFilters.length > 0 && (
+            <div className={style.activeFiltersContainer}>
+              <h3>Active Filters:</h3>
+              <div className={style.filterTags}>
+                {activeFilters.map(({ category, filter }, index) => (
+                  <div key={index} className={style.filterTag}>
+                    <span className={style.filterCategory}>{category}:</span>
+                    <span className={style.filterValue}>{filter}</span>
+                    <button
+                      onClick={() => removeFilter(category, filter)}
+                      className={style.removeFilterBtn}
+                    >
+                      ×
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         
       
 
@@ -336,7 +338,7 @@ export default function AvailableJournal() {
             <div className={style.actualTable}>
                     <tr>
                       <td colSpan="11" style={{ textAlign: "center" }}>
-                       {<h2>Results: {filteredData.length} {filteredData.length>1?"journals found":"journal found"}</h2>}
+                       {<h2>Results: {filteredData.length} {filteredData.length>1?"Journals Found":"Journal Found"}</h2>}
                       </td>
                     </tr>
               <table className={style.actualTableTag}>

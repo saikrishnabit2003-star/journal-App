@@ -17,11 +17,13 @@ export default function AssociateEditor() {
   const [filters, setFilters] = useState({
     Journal_Login_Status: [],
     Index: [],
+    APC: [],
   });
 
   const mainItems = [
     "Journal_Login_Status",
     "Index",
+    "APC",
 
   ];
 
@@ -38,6 +40,10 @@ export default function AssociateEditor() {
       "Scopus",
       "SIE",
       "SSCI",
+    ],
+    APC: [
+      "$2,300",
+      "N/A",
     ],
 
   };
@@ -138,12 +144,13 @@ export default function AssociateEditor() {
   return (
     <div className={style.page}>
       <div className={style.body}>
-        <button onClick={() => nav("/Thirdpage")} className={style.backButton}>
-          <img src={backButton} alt="Back" />
-        </button>
+        
 
         {/* search area */}
-        <div>
+        <div className={style.mainsearch}>
+          <button onClick={() => nav("/Thirdpage")} className={style.backButton}>
+          <img src={backButton} alt="Back" />
+        </button>
           <div className={style.searchContainer}>
                       <div>
                         <div>
@@ -192,26 +199,7 @@ export default function AssociateEditor() {
                         </div>
                       </div>
 
-          {/* Active Filters Display */}
-          {activeFilters.length > 0 && (
-            <div className={style.activeFiltersContainer}>
-              <h3>Active Filters:</h3>
-              <div className={style.filterTags}>
-                {activeFilters.map(({ category, filter }, index) => (
-                  <div key={index} className={style.filterTag}>
-                    <span className={style.filterCategory}>{category}:</span>
-                    <span className={style.filterValue}>{filter}</span>
-                    <button
-                      onClick={() => removeFilter(category, filter)}
-                      className={style.removeFilterBtn}
-                    >
-                      ×
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+          
 
           {/* Filter Menu with Overlay */}
           {showMenu && (
@@ -263,6 +251,26 @@ export default function AssociateEditor() {
             </>
           )}
         </div>
+        {/* Active Filters Display */}
+          {activeFilters.length > 0 && (
+            <div className={style.activeFiltersContainer}>
+              <h3>Active Filters:</h3>
+              <div className={style.filterTags}>
+                {activeFilters.map(({ category, filter }, index) => (
+                  <div key={index} className={style.filterTag}>
+                    <span className={style.filterCategory}>{category}:</span>
+                    <span className={style.filterValue}>{filter}</span>
+                    <button
+                      onClick={() => removeFilter(category, filter)}
+                      className={style.removeFilterBtn}
+                    >
+                      ×
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         
       
 
@@ -280,14 +288,14 @@ export default function AssociateEditor() {
               <table className={style.actualTableTag}>
                 <thead>
                   <tr>
-                    <th>S_no</th>
-                    <th>Journal_Name</th>
-                    <th>Special_Issue_keywords</th>
-                    <th>Similarity_Score</th>
-                    <th>Journal_Website</th>
-                    <th>Journal_Username</th>
-                    <th>Journal_Password</th>
-                    <th>Journal_Login_Status</th>
+                    <th>S.no</th>
+                    <th>Journal Name</th>
+                    <th>Special Issue Keywords</th>
+                    <th>Similarity Score</th>
+                    <th>Journal Website</th>
+                    <th>Journal Username</th>
+                    <th>Journal Password</th>
+                    <th>Journal Login Status</th>
                     <th>Index</th>
                     <th>Assigned To</th>
                     <th>Remarks</th>

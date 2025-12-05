@@ -106,6 +106,10 @@ export default function Uploadpage() {
             <div className={style.maincontainer}>
                   <div className={style.uploadspace}>
                     <h2>Upload Journal File</h2>
+                     <div className={style.centerLink}>
+                      <p>Sample Journal File</p>
+                      <a href="/files/journal_file_1.xlsx" download>Click here</a>
+                    </div>
                       <div>
                           <div className={style.droparea}>
                               <p>{file ? file.name : "CSV/Excel here!!"}</p>
@@ -120,6 +124,11 @@ export default function Uploadpage() {
             <div className={style.maincontainer}>
                   <div className={style.uploadspace}>
                     <h2>Upload Associate  File</h2>
+                     <div className={style.centerLink}>
+                        <p>Sample Associate File</p>
+                        <a href="/public/files/associate-editor_export_13-Nov-2025.xlsx" download>Click here</a>
+                      </div>
+                   
                       <div>
                           <div className={style.droparea}>
                               <p>{assfile ? assfile.name : "CSV/Excel here!!"}</p>
