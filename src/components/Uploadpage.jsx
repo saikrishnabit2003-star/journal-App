@@ -126,7 +126,7 @@ export default function Uploadpage() {
                     <h2>Upload Associate  File</h2>
                      <div className={style.centerLink}>
                         <p>Sample Associate File</p>
-                        <a href="/public/files/associate-editor_export_13-Nov-2025.xlsx" download>Click here</a>
+                        <a href="/files/associate-editor_export_13-Nov-2025.xlsx" download>Click here</a>
                       </div>
                    
                       <div>
