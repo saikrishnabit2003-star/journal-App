@@ -1,4 +1,7 @@
-![home page]{https://github.com/saikrishnabit2003-star/journal-App/blob/e3d863bc90ef231ca288caa99fced005481f7908/Screenshot%202025-12-09%20135423.png}
+<p align="center">
+  <img src="https://github.com/saikrishnabit2003-star/journal-App/blob/e3d863bc90ef231ca288caa99fced005481f7908/Screenshot%202025-12-09%20135423.png?raw=true" width="700" alt="Journal App Screenshot" />
+</p>
+
 # ⚡ Journal Suggestion Application
 
 <!-- <p align="center">
