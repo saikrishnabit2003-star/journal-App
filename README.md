@@ -5,11 +5,12 @@
 </p> -->
 
 <p align="center">
-  <img src="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3xdgj7v9vhogcr37ar7b.png" />
-  <img src="https://img.shields.io/badge/PostgreSQL-AWS%20RDS-316192?logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/VectorDB-ChromaDB-purple" />
-  <img src="https://img.shields.io/badge/Deployed-AWS%20EC2-orange" />
-  <img src="https://img.shields.io/badge/License-MIT-green" />
+  <img src="https://img.shields.io/badge/React-18.0+-61DAFB?logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/HTML5-Markup-E34F26?logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data-Fetch%20API-blue" />
+  <img src="https://img.shields.io/badge/Auth-LocalStorage-lightgrey" />
 </p>
 
 A **modular**, **scalable** FastAPI backend for:
