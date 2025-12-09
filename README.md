@@ -33,11 +33,11 @@
 
 ### 🛠️ Installation & Setup
 
-git clone <repo_url>
+```git clone <repo_url>
 cd journal-frontend
 
 npm install
-npm run dev
+npm run dev```
 
 ---
 ### 🔐 Authentication Flow
@@ -48,8 +48,9 @@ npm run dev
 
 ### Login Example
 ```js
-localStorage.setItem("user", "active");
+localStorage.setItem("user", "active");```
 
 ### Logout:
+```
 
-localStorage.removeItem("user");
+localStorage.removeItem("user");```
