@@ -14,17 +14,18 @@
 </p>
 
 **📝Overview** :
-The Journal Suggestion Application allows users to log in, upload journal data, download templates, and manage journal information. This version includes only the frontend implementation with localStorage-based authentication for a single user.
+- The Journal Suggestion Application allows users to log in, upload journal data, download templates, and manage journal information. This version includes only the frontend implementation with localStorage-based authentication for a single user.
 ---
 
-## ✨ Key Features
+### ✨ Key Features
 
-###✔ Single user login using localStorage
-###✔ Journal file upload & template download
-###✔ Modern and responsive UI
-###✔ Error handling for invalid data
-###✔ Fast build with Vite
-###✔ React Router navigation management
+- ✔ Single user login using LocalStorage  
+- ✔ Journal file upload & template download  
+- ✔ Modern and responsive UI  
+- ✔ Error handling for invalid data  
+- ✔ Fast build with Vite  
+- ✔ React Router navigation management  
+
 
 
 📌 Ensures **accurate + enriched** results
