@@ -39,6 +39,7 @@ cd journal-frontend
 npm install
 npm run dev
 ```
+---
 ### 🔐 Authentication Flow
 
 - LocalStorage stores login state
@@ -53,3 +54,4 @@ localStorage.setItem("user", "active");```
 ### Logout:
 ```
 localStorage.removeItem("user");```
+---
