@@ -33,14 +33,12 @@
 
 ### 🛠️ Installation & Setup
 
-```bash
 git clone <repo_url>
 cd journal-frontend
 
 npm install
 npm run dev
-### 📝Overview :
-- The Journal Suggestion Application allows users to log in, upload journal data, download templates, and manage journal information. This version includes only the frontend implementation with localStorage-based authentication for a single user.
+
 ---
 ### 🔐 Authentication Flow
 
