@@ -184,7 +184,7 @@ export default function AssociateEditor() {
                       <div>
                        
                         <div className={style.buttonContainer}>
-                           <div><button id={style.searchbtn} onClick={handleFetch}>Available journals</button></div>
+                           <div><button id={style.searchbtn} onClick={handleFetch}>Associated journals</button></div>
                               <button type="button" onClick={() => setShowMenu(!showMenu)}>
                                 Show filters
                               </button>
